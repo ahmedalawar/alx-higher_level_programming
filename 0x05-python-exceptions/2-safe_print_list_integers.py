@@ -8,9 +8,7 @@ def safe_print_list_integers(my_list=[], x=0):
                 value = next(iterator)
                 if isinstance(value, int):
                     print("{:d}".format(value), end='')
-                    count += 1
-            except StopIteration:
-                break
+                    counter += 1
     finally:
         print()
     return count
